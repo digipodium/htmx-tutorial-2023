@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTMX Example</title>
+    <script src="https://unpkg.com/htmx.org@latest/dist/htmx.js"></script>
+</head>
+<body>
+    <h1>Fetch User Data</h1>
+    <button hx-get="https://jsonplaceholder.typicode.com/users/1" hx-target="#user-details">Fetch User</button>
+    <div id="user-details">
+        <!-- User data will be displayed here -->
+    </div>
+</body>
+</html>
